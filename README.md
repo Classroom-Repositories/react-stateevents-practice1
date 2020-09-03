@@ -23,4 +23,4 @@ TO START: json-server --watch dogs.json
 - setState
 - Event Handling in React
 
-![dog gif](react-events.gif)
+![dog gif](state-pairing-gif.gif)
