@@ -1,5 +1,5 @@
 {
-  "apiResponse": [
+  "dogs": [
     {
       "id": 1,
       "name": "Ozzy Pawsborne",
