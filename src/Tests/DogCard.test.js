@@ -21,15 +21,23 @@ it("renders with dog's name", () => {
     act(() => {
         render(<DogCard />, container);
     });
-    // console.log(container.querySelector("h2").textContent)
-    expect(container.querySelector("h2").textContent).not.toBe("");
-
+    expect(container.querySelector("h2").textContent).toBeTruthy();
 });
 it("renders with dog's image", () => {
     act(() => {
         render(<DogCard />, container);
     });
-    // console.log(container.querySelector("h2").textContent)
-    expect(container.querySelector("img").src).not.toBe("");
+    expect(container.querySelector("img").src).toBeTruthy();
+});
+it("toggles bark when clicked", () => {
+    act(() => {
+        render(<DogCard />, container);
+    });
+    let button = container.querySelector("button");
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    // console.log(expect())
+    expect(container.querySelector("h3")).toBeTruthy();
 
+    button.dispatchEvent(new MouseEvent("click", { bubbles: true }));
+    expect(container.querySelector("h3")).toBeFalsy();
 });

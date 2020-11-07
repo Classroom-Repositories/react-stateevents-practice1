@@ -6,7 +6,7 @@ class DogCard extends React.Component {
       <div>
         <h2>{/*Dog name goes here*/}</h2>
         <img alt="" src={""} />
-        <button onClick={""}>Bark</button>
+        <button >Bark</button>
       </div>
     );
   }
